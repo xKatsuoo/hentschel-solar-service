@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Hentschel Solar Service — Von der Sonne zum eigenen Zuhause</title>
+  <meta name="description" content="Hentschel Solar Service begleitet Hausbesitzer im Saarland von der ersten Beratung bis zur schlüsselfertigen Photovoltaikanlage – alles aus einer Hand." />
+  <style>
+    :root, .sw-root {
+      --sw-bg: #F8F8F5;          /* Soft Sand */
+      --sw-ink: #1A1A1A;         /* Midnight Graphite */
+      --sw-ink-soft: #5c5c58;
+      --sw-accent: #F6B21A;      /* Solar Gold — per-section accents override at runtime */
+      --sw-font-display: 'Helvetica Neue', Arial, sans-serif;
+      --sw-font-body: 'Helvetica Neue', Arial, sans-serif;
+    }
+    html, body { margin: 0; padding: 0; background: var(--sw-bg); }
+    #world { min-height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="top"></div>
+  <div id="world"></div>
+
+  <script src="lib/scrub-engine.js"></script>
+  <script>
+    mountScrollWorld(document.getElementById('world'), {
+      brand: { name: 'Hentschel Solar Service', href: '#top' },
+      cta: { label: 'Beratung anfragen', href: '#finished-home' },
+      hint: 'scrollen zum Eintauchen',
+      diveScroll: 1.3,
+      connScroll: 0.9,
+      sections: [
+        {
+          id: 'sunrise', label: 'Der Sonnenaufgang',
+          still: 'assets/img/sunrise.webp',
+          stillMobile: 'assets/img/sunrise-m.webp',
+          clip: 'assets/vid/sunrise.mp4',
+          clipMobile: 'assets/vid/sunrise-m.mp4',
+          accent: '#F6B21A',
+          scroll: 1.6, linger: 0.4,
+          eyebrow: 'Hentschel Solar Service',
+          title: 'Vom ersten Sonnenstrahl bis zum eigenen Strom.',
+          body: 'Jeden Morgen trifft die Sonne Ihr Dach im Saarland – wir zeigen Ihnen, wie daraus saubere Energie für Ihr ganzes Zuhause wird.',
+          tags: ['Saarland', 'Photovoltaik', 'Alles aus einer Hand'],
+        },
+        {
+          id: 'rooftop', label: 'Das Dach',
+          still: 'assets/img/rooftop.webp',
+          stillMobile: 'assets/img/rooftop-m.webp',
+          clip: 'assets/vid/rooftop.mp4',
+          clipMobile: 'assets/vid/rooftop-m.mp4',
+          accent: '#F6B21A',
+          eyebrow: 'Photovoltaik',
+          title: 'Ihr Dach wird zum Kraftwerk.',
+          body: 'Hocheffiziente Solarmodule verwandeln Sonnenlicht in Energie – leise, langlebig und präzise auf Ihr Haus geplant.',
+          tags: ['Individuelle Planung', 'Hohe Erträge'],
+        },
+        {
+          id: 'engine-room', label: 'Die Technik',
+          still: 'assets/img/engine-room.webp',
+          stillMobile: 'assets/img/engine-room-m.webp',
+          clip: 'assets/vid/engine-room.mp4',
+          clipMobile: 'assets/vid/engine-room-m.mp4',
+          accent: '#1A1A1A',
+          eyebrow: 'Speichertechnik',
+          title: 'Energie, die wartet, bis Sie sie brauchen.',
+          body: 'Wechselrichter und Batteriespeicher arbeiten unauffällig im Hintergrund und sichern Ihre Unabhängigkeit – auch nachts und bei Wolken.',
+          tags: ['Batteriespeicher', 'Smarte Steuerung'],
+        },
+        {
+          id: 'home-interior', label: 'Ihr Zuhause',
+          still: 'assets/img/home-interior.webp',
+          stillMobile: 'assets/img/home-interior-m.webp',
+          clip: 'assets/vid/home-interior.mp4',
+          clipMobile: 'assets/vid/home-interior-m.mp4',
+          accent: '#0E4B2E',
+          eyebrow: 'Ihr Zuhause',
+          title: 'Strom, der einfach da ist.',
+          body: 'Ob Kühlschrank, Heizung oder Licht – Ihre eigene Energie versorgt jeden Winkel Ihres Zuhauses, rund um die Uhr.',
+          tags: ['Energieunabhängigkeit'],
+        },
+        {
+          id: 'everyday-energy', label: 'Alltagsenergie',
+          still: 'assets/img/everyday-energy.webp',
+          stillMobile: 'assets/img/everyday-energy-m.webp',
+          clip: 'assets/vid/everyday-energy.mp4',
+          clipMobile: 'assets/vid/everyday-energy-m.mp4',
+          accent: '#F6B21A',
+          eyebrow: 'Alltagstauglich',
+          title: 'Vom Balkonkraftwerk bis zur Wallbox.',
+          body: 'Ob Einfamilienhaus oder Mietwohnung, ob E-Auto oder Balkon – wir finden die passende Lösung für jeden Bedarf.',
+          tags: ['Wallbox', 'Balkonkraftwerk', 'E-Mobilität'],
+        },
+        {
+          id: 'team', label: 'Das Team',
+          still: 'assets/img/team.webp',
+          stillMobile: 'assets/img/team-m.webp',
+          clip: 'assets/vid/team.mp4',
+          clipMobile: 'assets/vid/team-m.mp4',
+          accent: '#0E4B2E',
+          eyebrow: 'Alles aus einer Hand',
+          title: 'Von der Beratung bis zur Wartung.',
+          body: 'Unser Team begleitet Sie persönlich – von der ersten Idee über die Installation bis zu Wartung und Reinigung Ihrer Anlage.',
+          tags: ['Installation', 'Wartung & Reinigung'],
+        },
+        {
+          id: 'finished-home', label: 'Das fertige Zuhause',
+          still: 'assets/img/finished-home.webp',
+          stillMobile: 'assets/img/finished-home-m.webp',
+          clip: 'assets/vid/finished-home.mp4',
+          clipMobile: 'assets/vid/finished-home-m.mp4',
+          accent: '#F6B21A',
+          scroll: 1.6, linger: 0.4,
+          eyebrow: 'Hentschel Solar Service',
+          title: 'Ihr Zuhause. Ihre Energie.',
+          body: 'Vereinbaren Sie jetzt Ihr kostenloses Beratungsgespräch – wir planen Ihre Photovoltaikanlage von der ersten Idee bis zur schlüsselfertigen Übergabe.',
+          tags: ['Kostenlose Beratung'],
+          cta: { primary: { label: 'Kostenlose Beratung anfragen', href: 'mailto:info@hentschel-solarservice.de?subject=Beratungsanfrage' } },
+        },
+      ],
+      connectors: [],
+      connectorsMobile: [],
+    });
+  </script>
+</body>
+</html>
